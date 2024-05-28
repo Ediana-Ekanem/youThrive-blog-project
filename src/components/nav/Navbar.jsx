@@ -6,8 +6,9 @@ const Navbar = () => {
     <div>
       <nav className="bg-black text-white w-full h-20 p-5 fixed top-0 left-0">
         <div className="flex justify-around items-center">
-          <div className="">
+          <div className="flex items-center font-semibold">
             <BiLogoSkype size={40} />
+            My Blog Site
           </div>
           <ul className="flex space-x-8 justify-center font-semibold text-lg  ">
             <li>

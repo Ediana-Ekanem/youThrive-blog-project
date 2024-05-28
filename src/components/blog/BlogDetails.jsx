@@ -29,7 +29,7 @@ const BlogDetails = () => {
         <FaArrowLeft
           onClick={handleBackClick}
           color="white"
-          size={30}
+          size={28}
           className="ms-3 "
         />
 
