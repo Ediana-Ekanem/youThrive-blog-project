@@ -15,26 +15,30 @@ const Blog = () => {
         setPosts(response.data);
       })
       .catch((error) => {
-        console.log("Error occured while fetching data:", error);
+        console.log("Error occurred while fetching data:", error);
       });
   }, []);
 
-  const handleBlogDetails = () => {
-    console.log("yes");
-    navigate("/blogOne");
+  const handleBlogDetails = (id) => {
+    navigate(`/blog/${id}`);
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-1 gap-y-10 py-40 px-40">
-      {posts.map((post) => (
-        <Card
-          key={post.id}
-          title={post.title}
-          body={post.body}
-          handleClick={handleBlogDetails}
-        />
-      ))}
-    </div>
+    <>
+      <h2 className="text-center mt-10 font-bold text-2xl pt-20">
+        All <span className=" text-violet-700 ">Blogs</span>
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-1 gap-y-10 py-40 px-40">
+        {posts.map((post) => (
+          <Card
+            key={post.id}
+            title={post.title}
+            body={post.body}
+            handleClick={() => handleBlogDetails(post.id)}
+          />
+        ))}
+      </div>
+    </>
   );
 };
 
