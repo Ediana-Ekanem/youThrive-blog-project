@@ -5,6 +5,7 @@ import Navbar from "./components/nav/Navbar";
 import Blog from "./components/blog/Blog";
 import Portfolio from "./components/portfolio/Portfolio";
 import BlogDetails from "./components/blog/BlogDetails";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
+      <Footer />
     </>
   );
 }
