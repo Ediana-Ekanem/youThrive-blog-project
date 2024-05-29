@@ -24,7 +24,7 @@ const Navbar = () => {
               <Link to="/portfolio">Portforlio</Link>
             </li>
           </ul>
-          <div className="flex gap-3 font-semibold">
+          <div className="gap-3 font-semibold hidden md:flex">
             <button className="bg-[#232327] text-white rounded-md py-1 px-2">
               Login
             </button>

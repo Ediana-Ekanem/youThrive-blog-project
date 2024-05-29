@@ -25,7 +25,7 @@ const BlogDetails = () => {
 
   return (
     <>
-      <div className=" bg-slate-500 pt-24">
+      <div className=" bg-slate-500 pt-24 cursor-pointer">
         <FaArrowLeft
           onClick={handleBackClick}
           color="white"
